@@ -81,7 +81,7 @@
 
     <!-- Input field for Template Subject -->
     <div class="row-span-3 col-span-4 bg-white h-[calc(100vh-150px)]">
-      <div v-if="addShow">
+      <div v-if="show">
         <div class="bg-gray-50 mx-auto px-5 py-3">
           <div class="text-center mb-0 rounded-0">
             <!-- Input field for Template name -->
@@ -134,7 +134,7 @@
         </div>
       </div>
       <CollectionsEdit
-        v-if="show"
+        v-if="!show"
         :templateId="id"
         :templateName="name"
         :templateSubject="subject"
@@ -147,8 +147,7 @@
   <script setup lang="ts">
 import { ref } from "vue";
 import { TrashIcon, PencilSquareIcon } from "@heroicons/vue/24/outline";
-const addShow = ref(true);
-const show = ref(false);
+const show = ref(true);
 const props = defineProps({
   // Get Template Mail Data
   templateData: {
@@ -167,8 +166,7 @@ let subject = ref("");
 //const edit = (item: any) => { useBusEmit('edit-template', item), console.log("-------->emit", item)}
 const edit = (data: any) => {
   console.log("data", data);
-  addShow.value = false;
-  show.value = true;
+  show.value = false;
   //$bus.$emit('edit-template', data)
   id.value = data.uid;
   name.value = data.name;
