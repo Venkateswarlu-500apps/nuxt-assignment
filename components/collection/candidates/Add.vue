@@ -33,7 +33,7 @@
                         <div class="ml-3 flex h-7 items-center">
                           <button
                             type="button"
-                            class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                            class="mb-2 rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                             @click="open = false"
                           >
                             <span class="sr-only">Close panel</span>
@@ -42,9 +42,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="relative mt-6 flex-1 px-4 sm:px-6">
-                      <!-- Your content -->
-                      <div class="mt-6 py-6">
+                    <hr/>
+                    <div class="relative flex-1 px-4 sm:px-6">
+                      <div class="mt-6">
                           <label class="text-4xl font-black text-gray-900 dark:text-white"/>Candidate Name
                           <input placeholder="Enter Candidate Name" v-model="candidateName" type="text" class="block mb-3 px-3 rounded-md border-0 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6 w-[100%]"/>
                           <label class="text-4xl font-black text-gray-900 dark:text-white"/>Test Type
@@ -69,19 +69,21 @@
                           <input v-model="modifieData" type="datetime-local" class="block mb-3 px-3 rounded-md border-0 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-blue-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6 w-[100%]"/>
 
                         </div>
+                        <hr/>
                         <div class=" bg-gray h-auto">
-                          <div class="bg-gray-50 mx-auto px-4 py-3">
+                          <div class="bg-gray-50 mx-auto">
                             <div class="text-center mb-0 rounded-0">
                             <div class="flex justify-end mr-3 mt-4">
                               <button
                                 type="button"
-                                class="border rounded-md bg-white py-2 px-3 text-sm font-semibold text-gray-600 shadow-sm hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mr-3"
+                                class="border rounded-md bg-gray-600 py-2 px-3 text-sm font-semibold text-white shadow-sm hover:bg-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mr-3"
+                                @click="open = false"
                               >
                                 Cancel
                               </button>
                               <button
                                 type="button"
-                                class="rounded-md bg-indigo-600 py-2 px-4 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                class="rounded-md bg-blue-600 py-2 px-4 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                 @click="add()"
                               >
                                 Save
@@ -144,5 +146,6 @@ const add = () => {
     last_modified_date: modifieData.value
   };
   emit("addCandidateData", data);
+  open.value=false
 };
 </script>

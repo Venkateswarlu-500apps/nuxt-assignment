@@ -1,12 +1,12 @@
 <template>
   <div>
     <div>
-    <CollectionsCandidatesList
+    <CollectionCandidatesList
       @openSidebar="openSidebar"
       :candidatesData="candidatesData"
     /></div>
 <div  v-if="showSidebar">
-    <CollectionsCandidatesAdd
+    <CollectionCandidatesAdd
        :key="renderAdd"
       @addCandidateData="addCandidate"
     /></div>
@@ -22,7 +22,7 @@ const openSidebar = () => {
   renderAdd.value++
 };
 
-const addCandidate = (data: object, show: boolean) => {
+const addCandidate = (data: object) => {
   const postOptions = {
     method: "POST",
     headers: {
