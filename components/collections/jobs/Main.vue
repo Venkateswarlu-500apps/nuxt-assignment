@@ -1,16 +1,18 @@
 <template>
   <div>
     <CollectionsJobsList @openSidebar="openSidebar" :jobDetails="jobDetails"/>
-    <CollectionsJobsAdd v-if="showSideBar"/>
+    <CollectionsJobsAdd v-if="showSideBar" :key="render" @saveJob="addJob"/>
   </div>
 </template>
 <script setup lang="ts">
 import { ref } from "vue";
 
-const showSideBar = ref(false)
+const showSideBar = ref(false);
+const render = ref(0);
 
 const openSidebar = ()=>{
-  showSideBar.value = true
+  showSideBar.value = true;
+  render.value++;
 }
 
 const addJob = (data: object) => {
@@ -43,5 +45,4 @@ var getJobDetails = await useAuthLazyFetch(
 );
 
 let jobDetails = ref(getJobDetails.data._rawValue)
-console.log("-------->", jobDetails)
 </script>
