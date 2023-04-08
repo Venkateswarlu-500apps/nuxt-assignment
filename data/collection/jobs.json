@@ -1,0 +1,473 @@
+{
+    "jobs": [
+        {
+            "label": "Job Title",
+            "type": "text",
+            "key": "title",
+            "value": "",
+            "placeholder": "Please Enter Title",
+            "minlength": "1",
+            "maxlength": "100",
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Industries",
+            "type": "select",
+            "key": "industries",
+            "value": "",
+            "options": [
+                {
+                    "text": "Please Select Industries",
+                    "value": "",
+                    "disabled":true
+                },
+                {
+                    "text": "IT",
+                    "value": "it"
+                },
+                {
+                    "text": "Medical",
+                    "value": "medical"
+                }
+            ],
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3  text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Designation",
+            "type": "text",
+            "key": "designation",
+            "value": "",
+            "placeholder": "Please Enter Designation",
+            "minlength": "1",
+            "maxlength": "100",
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Education Qualification",
+            "type": "select",
+            "key": "education_qualification",
+            "value": "",
+            "options": [
+                {
+                    "text": "Please Select Education Qualification",
+                    "value": "",
+                    "disabled":true
+
+                },
+                {
+                    "text": "B.Tech",
+                    "value": "b.tech"
+                },
+                {
+                    "text": "M.Tech",
+                    "value": "m.tech"
+                }
+            ],
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Skills Description",
+            "type": "textarea",
+            "key": "skills_description",
+            "value": "",
+            "placeholder": "Please Enter Skills Description...",
+            "minlength": "1",
+            "maxlength": "250",
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "External Source",
+            "type": "text",
+            "key": "external_source",
+            "value": "",
+            "placeholder": "Please Enter External Source",
+            "minlength": "1",
+            "maxlength": "100",
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Experience Level",
+            "type": "text",
+            "key": "experience_level",
+            "value": "",
+            "placeholder": "Please Enter Experience Level",
+            "minlength": "1",
+            "maxlength": "100",
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Listed Date",
+            "type": "datetime-local",
+            "key": "listed_date",
+            "value": "",
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Description",
+            "type": "textarea",
+            "key": "description",
+            "value": "",
+            "placeholder": "Please Enter Description...",
+            "minlength": "1",
+            "maxlength": "250",
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Experience In Place of Education",
+            "type": "text",
+            "key": "experience_in_placeof_education",
+            "value": "",
+            "placeholder": "Please Enter Experience In Place of Education",
+            "minlength": "1",
+            "maxlength": "100",
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Expiry Date",
+            "type": "datetime-local",
+            "key": "expiry_date",
+            "value": "",
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Apply Url",
+            "type": "url",
+            "key": "apply_url",
+            "value": "",
+            "placeholder": "Please Enter Url",
+            "minlength": "1",
+            "maxlength": "100",
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Operation Type",
+            "type": "select",
+            "key": "operation_type",
+            "value": "",
+            "options": [
+                {
+                    "text": "Please Select Operation Type",
+                    "value": "",
+                    "disabled":true
+
+                },
+                {
+                    "text": "Create",
+                    "value": "create"
+                },
+                {
+                    "text": "Delete",
+                    "value": "delete"
+                }
+            ],
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Work Hours",
+            "type": "number",
+            "key": "work_hours",
+            "value": 0,
+            "placeholder": "Please Enter Work Hours",
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Working Days",
+            "type": "number",
+            "key": "working_days",
+            "value": 1,
+            "placeholder": "Please Enter Working Days",
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Work Remote Allowed",
+            "type": "select",
+            "key": "is_work_remote_allowed",
+            "value": "",
+            "options": [
+                {
+                    "text": "Please Select Work Remote Allowed",
+                    "value": "",
+                    "disabled":true
+
+                },
+                {
+                    "text": "Allowed",
+                    "value": 1
+                },
+                {
+                    "text": "Not Allowed",
+                    "value": 0
+                }
+            ],
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Workplace Type",
+            "type": "select",
+            "key": "workplace_type",
+            "value": "",
+            "options": [
+                {
+                    "text": "Please Select Workplace Type",
+                    "value": "",
+                    "disabled":true
+
+                },
+                {
+                    "text": "Onsite",
+                    "value": "onsite"
+                },
+                {
+                    "text": "Offsite",
+                    "value": "offsite"
+                }
+            ],
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Employment Status",
+            "type": "select",
+            "key": "employment_status",
+            "value": "",
+            "options": [
+                {
+                    "text": "Please Select Employment Status",
+                    "value": "",
+                    "disabled":true
+
+                },
+                {
+                    "text": "Ft",
+                    "value": "ft"
+                },
+                {
+                    "text": "Un Ft",
+                    "value": "unft"
+                }
+            ],
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Company Job Code",
+            "type": "number",
+            "key": "company_job_code",
+            "value": 0,
+            "placeholder": "Please Enter Company Job Code",
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "State",
+            "type": "select",
+            "key": "state",
+            "value": "",
+            "options": [
+                {
+                    "text": "Please Select State",
+                    "value": "",
+                    "disabled":true
+
+                },
+                {
+                    "text": "Open",
+                    "value": "open"
+                },
+                {
+                    "text": "Closed",
+                    "value": "closed"
+                }
+            ],
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Job Count",
+            "type": "number",
+            "key": "job_count",
+            "value": 0,
+            "placeholder": "Please Enter Job Count",
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Gender",
+            "type": "select",
+            "key": "gender",
+            "value": "",
+            "options": [
+                {
+                    "text": "Please Select Gender",
+                    "value": "",
+                    "disabled":true
+
+                },
+                {
+                    "text": "Male",
+                    "value": "male"
+                },
+                {
+                    "text": "Female",
+                    "value": "Female"
+                }
+            ],
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Languages",
+            "type": "select",
+            "key": "languages",
+            "value": "",
+            "options": [
+                {
+                    "text": "Please Select Languages",
+                    "value": "",
+                    "disabled":true
+
+                },
+                {
+                    "text": "English",
+                    "value": "english"
+                },
+                {
+                    "text": "Telugu",
+                    "value": "telugu"
+                },
+                {
+                    "text": "Hindi",
+                    "value": "hindi"
+                }
+            ],
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Start Date",
+            "type": "datetime-local",
+            "key": "start_date",
+            "value": "",
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Job Benefits",
+            "type": "textarea",
+            "key": "job_benefits",
+            "value": "",
+            "placeholder": "Please Enter Job Benefits",
+            "minlength": "1",
+            "maxlength": "200",
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Show Poster",
+            "type": "select",
+            "key": "show_poster",
+            "value": "",
+            "options": [
+                {
+                    "text": "Please Select Show Poster",
+                    "value": "",
+                    "disabled":true
+
+                },
+                {
+                    "text": "Yes",
+                    "value": "yes"
+                },
+                {
+                    "text": "No",
+                    "value": "no"
+                }
+            ],
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Poster Info",
+            "type": "text",
+            "key": "poster_info",
+            "value": "",
+            "placeholder": "Please Enter Poster Info",
+            "minlength": "1",
+            "maxlength": "100",
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Listing Type",
+            "type": "select",
+            "key": "listing_type",
+            "value": "",
+            "options": [
+                {
+                    "text": "Please Select Listing Type",
+                    "value": "",
+                    "disabled":true
+
+                },
+                {
+                    "text": "Basic",
+                    "value": "basic"
+                },
+                {
+                    "text": "Secondary",
+                    "value": "secondary"
+                }
+            ],
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Last Scrapped Date",
+            "type": "datetime-local",
+            "key": "last_scrapped_date",
+            "value": "",
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        },
+        {
+            "label": "Draft",
+            "type": "select",
+            "key": "is_draft",
+            "value": "",
+            "options": [
+                {
+                    "text": "Please Select Draft",
+                    "value": "",
+                    "disabled":true
+
+                },
+                {
+                    "text": "Is Draft",
+                    "value": 1
+                },
+                {
+                    "text": "Is Not Draft",
+                    "value": 0
+                }
+            ],
+            "required": true,
+            "class": "bg-white appearance-none border-2 border-gray-500  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:bg-gray-200 focus:border-blue-500"
+        }
+    ]
+}
