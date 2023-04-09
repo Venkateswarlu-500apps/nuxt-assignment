@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- <NuxtWelcome /> -->
-    <CollectionsMain/>
-  </div>
+<NuxtPage></NuxtPage> 
+ </div>
 </template>
