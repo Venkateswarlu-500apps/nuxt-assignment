@@ -35,30 +35,36 @@ const openAddContact = () => {
 };
 
 const addContact = (data: any) => {
-    console.log("data",data)
   contacts.value.push(data);
   localStorage.setItem("contacts", JSON.stringify(contacts.value));
 };
-
-const editContactData = (data: object) => {
+const editIndex = ref();
+const editContactData = (data: object, index: number) => {
   editContact.value = { ...data };
+  editIndex.value = index;
   openEditModal.value = true;
   renderEdit.value++;
 };
 
 const updateContact = (data: object) => {
-  //contacts.value.push(data);
+  contacts.value.find((item, index) => {
+    if (editIndex.value == index) {
+      item.name = data.name;
+      item.phone_number = data.phone_number;
+      item.country = data.country;
+    }
+  });
   localStorage.setItem("contacts", JSON.stringify(contacts.value));
 };
 
 onMounted(() => {
   const getContacts = localStorage.getItem("contacts");
-  contacts.value = JSON.parse(getContacts);
+  if (getContacts && getContacts.length)
+    contacts.value = JSON.parse(getContacts);
 });
 
 const deleteContact = (index: number) => {
-    contacts.value.splice(index, 1);
-    localStorage.setItem("contacts", JSON.stringify(contacts.value))
-
-}
+  contacts.value.splice(index, 1);
+  localStorage.setItem("contacts", JSON.stringify(contacts.value));
+};
 </script>

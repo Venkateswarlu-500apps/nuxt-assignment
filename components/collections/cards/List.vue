@@ -30,7 +30,7 @@
                       Name -
                     </h3>
                     <span
-                      class="inline-block capitalize flex-shrink-0 rounded-md bg-blue-100 px-2 py-0.5 text-xl font-medium text-blue-800"
+                      class="truncate inline-block capitalize flex-shrink-0 rounded-md bg-blue-100 px-2 py-0.5 text-xl font-medium text-blue-800"
                       >{{ contact.name }}</span
                     >
                   </div>
@@ -56,7 +56,7 @@
                     <button
                       href="#"
                       class="text-gray-600 hover:text-blue-600 mt-[-14.6rem]"
-                      @click="emit('editContactData', contact)"
+                      @click="emit('editContactData', contact, index)"
                     >
                       <PencilSquareIcon class="h-6 w-6" aria-hidden="true" />
                     </button>
